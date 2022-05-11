@@ -35,7 +35,9 @@ ul{
     color: white;
     font-weight: bolder;
 }
-
+.street{
+    max-width: 400px;
+}
 
 
 body{
