@@ -1,0 +1,43 @@
+
+.header{
+    background-color: #1f2937;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 24px;
+
+}
+
+.title-section{
+    display: flex;
+}
+
+
+
+.link-list{
+    display: flex;
+    gap: 16px;
+}
+
+
+a{
+    text-decoration: none;
+    color: rgb(154, 151, 145);
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.logo{
+    font-family: "luminari", "Brush Script MT", Arial;
+    font-size: 16px;
+    color: white;
+    font-weight: bolder;
+}
+
+
+
+body{
+    margin: 0;
+}
