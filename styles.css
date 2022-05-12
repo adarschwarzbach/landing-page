@@ -8,10 +8,27 @@
 }
 
 .title-section{
+    background-color: #9eafc7;
     display: flex;
+    padding: 32px;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+
 }
 
+.about{
+    font: "Hero Secondary text", "Header Link Text";
+}
 
+.left{
+    max-width: 450px;
+    flex: 1 none none;
+}
+
+.sub{
+    max-width: 140px;
+}
 
 .link-list{
     display: flex;
@@ -36,10 +53,30 @@ ul{
     font-weight: bolder;
 }
 .street{
-    max-width: 400px;
+    max-width: 350px;
 }
-
+.title{
+    margin: 0;
+    padding: 0px;
+    font-family:  "Hero Main text", Helvetica, sans-serif;
+    color: whitesmoke;
+}
+.b{
+    color: black;
+}
 
 body{
     margin: 0;
+}
+
+button{
+    font-family: Roboto, sans-serif;
+    border: none;
+    border-radius: 8px;
+    padding: 6px;
+}
+
+.a-button{
+    background-color: #1f2937;
+    color: whitesmoke;
 }
