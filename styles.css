@@ -1,4 +1,5 @@
 /* group by html area, simplify and markup */
+/* fix why context is going off page */
 
 
 .header{
@@ -10,13 +11,14 @@
 
 }
 
+
 .title-section{
     background-color: #9eafc7;
     display: flex;
     padding: 32px;
     align-items: center;
-    justify-content: center;
     gap: 54px;
+    justify-content: center;
     /* tried to fix going off l/r screen */
 
 }
