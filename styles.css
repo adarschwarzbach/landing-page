@@ -1,15 +1,40 @@
-/* group by html area, simplify and markup */
-/* fix why context is going off page */
+/* Stylesheet sorted by first appearence on page 
+buttons and misc. styling at bottom*/
 
+/* In the future I hope to re-use much for styling
+will help with readibility/effeciency */
 
 .header{
     background-color: #1f2937;
     display: flex;
     justify-content: space-between;
     padding: 8px 24px;
-
+}
+.logo{
+    font-family: "luminari", "Brush Script MT", Arial;
+    font-size: 16px;
+    color: white;
+    font-weight: bolder;
+}
+.link-list{
+    display: flex;
+    gap: 16px;
 }
 
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    /* styling for all links */
+    text-decoration: none;
+    color: rgb(154, 151, 145);
+}
+
+
+/* Title section styling, button styling seperate*/
 
 .title-section{
     background-color: #9eafc7;
@@ -21,31 +46,36 @@
 
 }
 
+.left{
+    max-width: 400px;
+}
 
+.title{
+    margin: 0;
+    padding: 0px;
+    font-family:  "Hero Main text", Helvetica, sans-serif;
+    color: whitesmoke;
+}
 .about{
     font: "Hero Secondary text", "Header Link Text";
     color: #1f2937;
 }
 
 .paint{
-    /* margin-left: auto;
-    margin-right: auto; */
     min-width: 0;
-
 }
-
-
-
-.left{
-    max-width: 400px;
-
-}
-
-
 .street{
     max-width:400px;
 }
 
+
+/* Recent painting section style */
+
+.b{
+    color: #1f2937;
+    text-align: center;
+    padding: 16px;
+}
 
 .cards{
     flex-wrap: wrap;
@@ -61,16 +91,6 @@
     gap: 32px;
 }
 
-.sub{
-    max-width: 180px;
-    flex: 1 1 none;
-    border-style: solid;
-    border-width: 3px;
-    border-radius: 6px;
-    border-color: #3882f6;
-}
-
-
 .info{
     text-align: center;
     max-width: 180px;
@@ -80,126 +100,16 @@
     padding: 0;
 }
 
-
-.link-list{
-    display: flex;
-    gap: 16px;
+.sub{
+    max-width: 180px;
+    flex: 1 1 none;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 6px;
+    border-color: #3882f6;
 }
 
-
-a{
-    text-decoration: none;
-    color: rgb(154, 151, 145);
-}
-
-ul{
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-.logo{
-    font-family: "luminari", "Brush Script MT", Arial;
-    font-size: 16px;
-    color: white;
-    font-weight: bolder;
-}
-
-
-.title{
-    margin: 0;
-    padding: 0px;
-    font-family:  "Hero Main text", Helvetica, sans-serif;
-    color: whitesmoke;
-}
-.b{
-    color: #1f2937;
-    text-align: center;
-    padding: 16px;
-}
-.message{
-    font-style:  italic;
-    font-size: large;
-}
-
-.quote{
-    background-color: #E5E7Eb;
-    padding: 54px;
-    display: flex;
-    flex-direction: column;
-}
-.author{
-    align-self: flex-end;
-}
-
-
-button{
-    font-family: Roboto, sans-serif;
-    border: solid;
-    border-radius: 8px;
-    padding: 8px;
-}
-
-.a-button{
-    background-color: #1f2937;
-    color: whitesmoke;
-    border-color: #1f2937;
-}
-
-
-body{
-    margin: 0;
-}
-
-.center{
-    display: flex;
-    justify-content: center;
-}
-.join{
-    justify-self: center;
-    background-color: #3882f6;
-    border-radius: 8px;
-    margin: 54px;
-    padding: 32px;
-    display: flex;
-    gap: 32px;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 600px;
-}
-
-.first .b-button{
-    max-width: 400px;
-    padding: 0px 32px;
-}
-.b-button{
-    border-color: whitesmoke;
-    background-color: #3882f6;
-    box-sizing: 2px;
-    color: whitesmoke;
-}
-.first{
-    color: whitesmoke;
-}
-.c{
-    font-weight: bold;
-    font-size: 20px;
-}
-.subtext{
-    font: "Hero Secondary text", "Header Link Text";
-    font-size: 16px;
-
-}
-
-.footer{
-    background-color: #1f2937;
-    padding: 8px;
-    display: flex;
-    justify-content: center;
-    color: rgb(154, 151, 145);;
-    font: "Hero Secondary text", "Header Link Text";
-}
-
-
+/* Dropdown menu's for art description */
 .dropdown{
     display: none;
     position: absolute;
@@ -220,5 +130,107 @@ body{
     max-width: 180px;
     color: #1f2937;
     font: "Hero Secondary text", "Header Link Text";
-    
+}
+
+
+
+/* Filler quote sectoin */
+
+.quote{
+    background-color: #E5E7Eb;
+    padding: 54px;
+    display: flex;
+    flex-direction: column;
+}
+
+.message{
+    font-style:  italic;
+    font-size: large;
+}
+
+
+.author{
+    align-self: flex-end;
+}
+
+
+
+
+/* Sign up card styling, button styling seperate */
+
+.center{
+    /* Extra container div to center card */
+    display: flex;
+    justify-content: center;
+}
+
+.join{
+    justify-self: center;
+    background-color: #3882f6;
+    border-radius: 8px;
+    margin: 54px;
+    padding: 32px;
+    display: flex;
+    gap: 32px;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 600px;
+}
+
+
+.first .b-button{
+    max-width: 400px;
+    padding: 0px 32px;
+}
+.first{
+    color: whitesmoke;
+}
+
+
+.c{
+    font-weight: bold;
+    font-size: 20px;
+}
+.subtext{
+    font: "Hero Secondary text", "Header Link Text";
+    font-size: 16px;
+
+}
+
+
+/* footer section styling */
+
+.footer{
+    background-color: #1f2937;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    color: rgb(154, 151, 145);;
+    font: "Hero Secondary text", "Header Link Text";
+}
+
+/* All button styling */
+button{
+    font-family: Roboto, sans-serif;
+    border: solid;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+.a-button{
+    background-color: #1f2937;
+    color: whitesmoke;
+    border-color: #1f2937;
+}
+
+.b-button{
+    border-color: whitesmoke;
+    background-color: #3882f6;
+    box-sizing: 2px;
+    color: whitesmoke;
+}
+
+/* remove body margin */
+body{
+    margin: 0;
 }
